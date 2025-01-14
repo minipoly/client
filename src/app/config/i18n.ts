@@ -13,7 +13,7 @@ i18n.use(HttpBackend)
             escapeValue: false,
         },
         backend: {
-            loadPath: "/locales/{{lng}}/translation.json",
+            loadPath: "/locales/{{lng}}/{{ns}}.json",
         },
     });
 

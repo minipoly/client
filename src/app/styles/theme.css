@@ -1,0 +1,13 @@
+:root {
+    /* Colors */
+    --mm-background: white;
+    /* Game */
+    --mmg-background: #d9e8d6;
+}
+
+[data-theme="dark"] {
+    /* Colors */
+    --mm-background: black;
+    /* Game */
+    --mmg-background: #2b2b2b;
+}
