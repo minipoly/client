@@ -5,6 +5,7 @@ import { ThemeProvider } from "@entities/theme";
 
 import "./styles/global.css";
 import "./styles/theme.css";
+import "./styles/fonts.css";
 
 setupI18n();
 

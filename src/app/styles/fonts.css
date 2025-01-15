@@ -1,0 +1,58 @@
+/* ITC Kabel Std */
+
+@font-face {
+    font-family: "Kabel";
+    src:
+        url("/fonts/Kabel_Bold.ttf") format("truetype"),
+        url("/fotns/Kabel_Bold.otf") format("opentype"),
+        url("/fonts/Kabel_Bold.woff") format("woff"),
+        url("/fonts/Kabel_Bold.woff2") format("woff2");
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kabel";
+    src:
+        url("/fonts/Kabel_Demi.ttf") format("truetype"),
+        url("/fotns/Kabel_Demi.otf") format("opentype"),
+        url("/fonts/Kabel_Demi.woff") format("woff"),
+        url("/fonts/Kabel_Demi.woff2") format("woff2");
+    font-weight: 600; /* Demi */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kabel";
+    src:
+        url("/fonts/Kabel_Medium.ttf") format("truetype"),
+        url("/fotns/Kabel_Medium.otf") format("opentype"),
+        url("/fonts/Kabel_Medium.woff") format("woff"),
+        url("/fonts/Kabel_Medium.woff2") format("woff2");
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+/* Helvetica Condensed */
+
+@font-face {
+    font-family: "Kabel";
+    src:
+        url("/fonts/Helvetica_Bold.ttf") format("truetype"),
+        url("/fotns/Helvetica_Bold.otf") format("opentype"),
+        url("/fonts/Helvetica_Bold.woff") format("woff"),
+        url("/fonts/Helvetica_Bold.woff2") format("woff2");
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src:
+        url("/fonts/Helvetica_Medium.ttf") format("truetype"),
+        url("/fotns/Helvetica_Medium.otf") format("opentype"),
+        url("/fonts/Helvetica_Medium.woff") format("woff"),
+        url("/fonts/Helvetica_Medium.woff2") format("woff2");
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}

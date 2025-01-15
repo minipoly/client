@@ -7,6 +7,10 @@ export default {
       colors: {
         background: "var(--mm-background)",
       },
+      fontFamily: {
+        game: "Kabel, sans-serif",
+        instruction: "Helvetica, sans-serif",
+      },
     },
   },
   plugins: [],
