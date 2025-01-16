@@ -1,13 +1,36 @@
 :root {
     /* Colors */
     --mm-background: white;
+    --mm-text: black;
+
     /* Game */
-    --mmg-background: #d9e8d6;
+    --mm-board-background: #d9e8d6;
+    --mm-board-text: #000;
+
+    /* Game colors*/
+    --mm-board-white: #fff;
+    --mm-board-red: #f11c26;
+    --mm-board-yellow: #fef200;
+    --mm-board-green: #1fb25a;
+    --mm-board-blue: #0072bb;
+    --mm-board-brown: #955235;
+    --mm-board-light-blue: #aae0fa;
+    --mm-board-pink: #d93a96;
+    --mm-board-orange: #f7941d;
+
+    /* Game gradients */
+    --mm-board-chance-gradient: linear-gradient(
+        #f9ad53 0%,
+        var(--board-orange) 60%
+    );
+    --mm-board-community-chest-gradient: linear-gradient(
+        #77bfe7 0%,
+        #c3e9fb 100%
+    );
 }
 
 [data-theme="dark"] {
     /* Colors */
     --mm-background: black;
-    /* Game */
-    --mmg-background: #2b2b2b;
+    --mm-text: white;
 }
