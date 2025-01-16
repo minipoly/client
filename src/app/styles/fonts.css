@@ -3,6 +3,7 @@
 @font-face {
     font-family: "Kabel";
     src:
+        local("ITC Kabel Std Bold"),
         url("/fonts/Kabel_Bold.ttf") format("truetype"),
         url("/fotns/Kabel_Bold.otf") format("opentype"),
         url("/fonts/Kabel_Bold.woff") format("woff"),
@@ -14,6 +15,7 @@
 @font-face {
     font-family: "Kabel";
     src:
+        local("ITC Kabel Std Demi "),
         url("/fonts/Kabel_Demi.ttf") format("truetype"),
         url("/fotns/Kabel_Demi.otf") format("opentype"),
         url("/fonts/Kabel_Demi.woff") format("woff"),
@@ -25,6 +27,7 @@
 @font-face {
     font-family: "Kabel";
     src:
+        local("ITC Kabel Std Medium"),
         url("/fonts/Kabel_Medium.ttf") format("truetype"),
         url("/fotns/Kabel_Medium.otf") format("opentype"),
         url("/fonts/Kabel_Medium.woff") format("woff"),
@@ -38,6 +41,7 @@
 @font-face {
     font-family: "Kabel";
     src:
+        local("Helvetica Condensed Bold"),
         url("/fonts/Helvetica_Bold.ttf") format("truetype"),
         url("/fotns/Helvetica_Bold.otf") format("opentype"),
         url("/fonts/Helvetica_Bold.woff") format("woff"),
@@ -49,10 +53,43 @@
 @font-face {
     font-family: "Helvetica";
     src:
+        local("Helvetica Condensed Medium"),
         url("/fonts/Helvetica_Medium.ttf") format("truetype"),
         url("/fotns/Helvetica_Medium.otf") format("opentype"),
         url("/fonts/Helvetica_Medium.woff") format("woff"),
         url("/fonts/Helvetica_Medium.woff2") format("woff2");
     font-weight: 500; /* Medium */
     font-style: normal;
+}
+
+/* Board typography */
+
+.typography-board-large {
+    @apply font-m text-20 leading-22 tracking-2 font-game;
+}
+
+.typography-board-medium {
+    @apply font-m text-16 leading-18 tracking-1 font-game;
+}
+
+.typography-board-small {
+    @apply font-m text-13 leading-15 tracking-3 font-game;
+}
+
+/* Card typography */
+
+.typography-card-large {
+    @apply font-d text-12 leading-14 font-game tracking-normal;
+}
+
+.typography-card-large-bold {
+    @apply font-b text-12 leading-14 font-game tracking-normal;
+}
+
+.typography-card-medium {
+    @apply font-m text-9 leading-11 font-game tracking-normal;
+}
+
+.typography-card-medium-caps {
+    @apply font-m text-9 leading-11 font-game uppercase tracking-normal;
 }
