@@ -1,13 +1,11 @@
 import React, { memo } from "react";
 
-import { SpaceName } from "@shared/ui/space-name";
-import { SpaceCost } from "@shared/ui/space-cost";
-import { SpaceImage } from "@shared/ui/space-image";
+import { Space } from "@shared/ui/space";
 
 export interface ServiceSpaceProps {
     name: string;
     cost: number;
-    image: React.ReactNode;
+    image: string;
 }
 
 const ServiceSpaceComponent: React.FC<ServiceSpaceProps> = ({
@@ -16,11 +14,11 @@ const ServiceSpaceComponent: React.FC<ServiceSpaceProps> = ({
     image,
 }) => {
     return (
-        <div className="relative h-[182px] w-[112px] border-b-4 border-l-2 border-r-2 border-t-4 border-solid border-black">
-            <SpaceName className="m-[19px_0_0]">{name}</SpaceName>
-            <SpaceImage>{image}</SpaceImage>
-            <SpaceCost className="absolute bottom-4 w-full">{cost}</SpaceCost>
-        </div>
+        <Space>
+            <Space.Name className="m-[19px_0_0]">{name}</Space.Name>
+            <Space.Image image={image} className="absolute bottom-[34px]" />
+            <Space.Cost className="absolute bottom-4 w-full">{cost}</Space.Cost>
+        </Space>
     );
 };
 

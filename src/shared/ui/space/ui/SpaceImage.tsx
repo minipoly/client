@@ -1,20 +1,21 @@
 import React, { memo } from "react";
 
 export interface SpaceImageProps extends React.HTMLAttributes<HTMLDivElement> {
-    children: React.ReactNode;
+    image: string;
 }
 
 const SpaceImageComponent: React.FC<SpaceImageProps> = ({
-    children,
     className,
+    image,
     ...props
 }) => {
     return (
-        <div
-            className={`${className} flex h-[100px] select-none items-center justify-center`}
-            {...props}
-        >
-            {children}
+        <div className={`${className!} flex w-full justify-center`} {...props}>
+            <img
+                src={image}
+                className="pointer-events-none m-auto h-[100px] w-[100px] select-none"
+                alt="Icon"
+            />
         </div>
     );
 };

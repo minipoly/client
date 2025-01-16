@@ -2,7 +2,7 @@ import React, { memo } from "react";
 
 export interface SpaceNameProps
     extends React.HTMLAttributes<HTMLHeadingElement> {
-    children: React.ReactNode;
+    children: string;
 }
 
 const SpaceNameComponent: React.FC<SpaceNameProps> = ({
@@ -11,7 +11,7 @@ const SpaceNameComponent: React.FC<SpaceNameProps> = ({
 }) => {
     return (
         <h2
-            className={`typography-board-small text-board-text select-none text-center ${className}`}
+            className={`${className} typography-board-small select-none text-center text-board-text`}
         >
             {children}
         </h2>

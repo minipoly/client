@@ -3,10 +3,11 @@ import { useTranslation } from "react-i18next";
 
 import { StreetSpace } from "@entities/street-space";
 import { ServiceSpace } from "@entities/service-space";
-import { Train } from "@shared/assets/icons/Train";
+import { TaxSpace } from "@entities/tax-space";
+import { DrawablesSpace } from "@entities/drawables-space";
 
 const Game: React.FC = () => {
-    const { t } = useTranslation("game");
+    // const { t } = useTranslation("game");
     return (
         <div className="flex h-screen items-center bg-board-bg p-10 font-game text-[20px] font-medium">
             {/* {t("welcome")} */}
@@ -15,12 +16,20 @@ const Game: React.FC = () => {
             <ServiceSpace
                 name="NAME"
                 cost={350}
-                image={<Train className="text-board-text" />}
+                image={"/images/board/train.png"}
             />
             <StreetSpace color="yellow" name="NAME" cost={350} />
             <StreetSpace color="yellow" name="NAME" cost={350} />
-            <ServiceSpace name="NAME" cost={350} image={<>gg</>} />
+            <TaxSpace
+                name="LUXURY TAX"
+                cost={350}
+                image={"/images/board/ring.png"}
+            />
             <StreetSpace color="yellow" name="NAME" cost={350} />
+            <DrawablesSpace
+                name="COMMUNITY CHEST"
+                image={"/images/board/chest.png"}
+            />
         </div>
     );
 };
