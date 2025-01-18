@@ -7,15 +7,17 @@ import { Space } from "@shared/ui/space";
 export interface StreetSpaceProps extends StreetColorProps {
     name: string;
     cost: number;
+    className?: string;
 }
 
 const StreetSpaceComponent: React.FC<StreetSpaceProps> = ({
     color,
     name,
     cost,
+    className,
 }) => {
     return (
-        <Space>
+        <Space className={className}>
             <StreetColor
                 color={color}
                 className="h-[42px] w-full border-b-[4px] border-solid border-black"

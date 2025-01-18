@@ -1,0 +1,44 @@
+.board {
+    --corner-size: 182px;
+    --not-corner-size: -182px;
+    --space-size: 112px;
+    --field-size: calc(var(--corner-size) * 2 + var(--space-size) * 9);
+    position: relative;
+    height: var(--field-size);
+    width: var(--field-size);
+}
+
+.top,
+.bottom,
+.left,
+.right {
+    position: absolute;
+    width: calc(var(--corner-size) + var(--space-size) * 9);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bottom {
+    bottom: 0;
+    right: 0;
+}
+
+.left {
+    top: var(--corner-size);
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.top {
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.right {
+    left: var(--corner-size);
+    top: var(--not-corner-size);
+    transform: rotate(270deg);
+    transform-origin: bottom right;
+}
