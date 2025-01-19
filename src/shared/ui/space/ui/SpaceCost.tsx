@@ -13,7 +13,7 @@ const SpaceCostComponent: React.FC<SpaceCostProps> = ({
 }) => {
     return (
         <p
-            className={`${className} typography-board-small text-board-text flex select-none items-center justify-center`}
+            className={`${className} typography-board-small absolute bottom-[10%] flex w-full select-none items-center justify-center text-board-text`}
             {...props}
         >
             <span>

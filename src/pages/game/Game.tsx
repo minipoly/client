@@ -4,8 +4,8 @@ import { Board } from "@widgets/board";
 
 const Game: React.FC = () => {
     return (
-        <div>
-            <div className="min-w-screen flex min-h-screen items-end bg-board-bg p-10 font-game text-[20px] font-medium">
+        <div className="box-border flex h-screen w-screen bg-background">
+            <div className="m-auto h-screen">
                 <Board />
             </div>
         </div>

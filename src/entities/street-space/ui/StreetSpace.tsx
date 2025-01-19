@@ -20,10 +20,10 @@ const StreetSpaceComponent: React.FC<StreetSpaceProps> = ({
         <Space className={className}>
             <StreetColor
                 color={color}
-                className="h-[42px] w-full border-b-[4px] border-solid border-black"
+                className="h-[23%] w-full border-b-[2px] border-solid border-black"
             />
-            <Space.Name className="m-[21px_0_0]">{name}</Space.Name>
-            <Space.Cost className="absolute bottom-4 w-full">{cost}</Space.Cost>
+            <Space.Name>{name}</Space.Name>
+            <Space.Cost>{cost}</Space.Cost>
         </Space>
     );
 };

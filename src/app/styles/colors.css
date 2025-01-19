@@ -1,35 +1,35 @@
-.space-color-white {
+.bg-color-white {
     @apply bg-board-white;
 }
 
-.space-color-red {
+.bg-color-red {
     @apply bg-board-red;
 }
 
-.space-color-yellow {
+.bg-color-yellow {
     @apply bg-board-yellow;
 }
 
-.space-color-green {
+.bg-color-green {
     @apply bg-board-green;
 }
 
-.space-color-blue {
+.bg-color-blue {
     @apply bg-board-blue;
 }
 
-.space-color-brown {
+.bg-color-brown {
     @apply bg-board-brown;
 }
 
-.space-color-light-blue {
+.bg-color-light-blue {
     @apply bg-board-light-blue;
 }
 
-.space-color-orange {
+.bg-color-orange {
     @apply bg-board-orange;
 }
 
-.space-color-pink {
+.bg-color-pink {
     @apply bg-board-pink;
 }

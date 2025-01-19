@@ -11,7 +11,7 @@ const SpaceNameComponent: React.FC<SpaceNameProps> = ({
 }) => {
     return (
         <h2
-            className={`${className} typography-board-small select-none text-center text-board-text`}
+            className={`${className} typography-board-small m-[11%_0_0] select-none p-[0_3%] text-center text-board-text`}
         >
             {children}
         </h2>

@@ -13,7 +13,7 @@ const SpaceImageComponent: React.FC<SpaceImageProps> = ({
         <div className={`${className!} flex w-full justify-center`} {...props}>
             <img
                 src={image}
-                className="pointer-events-none m-auto h-[100px] w-[100px] select-none"
+                className="pointer-events-none m-auto h-[54.95%] w-full select-none"
                 alt="Icon"
             />
         </div>

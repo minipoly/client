@@ -1,7 +1,5 @@
 import React, { memo } from "react";
 
-import "./colors.css";
-
 export type color =
     | "white"
     | "red"
@@ -22,7 +20,7 @@ const StreetColorComponent: React.FC<StreetColorProps> = ({
     className,
     ...props
 }) => {
-    const ColorClass = `space-color-${color}`;
+    const ColorClass = `bg-color-${color}`;
 
     return <div className={`${ColorClass} ${className}`} {...props}></div>;
 };

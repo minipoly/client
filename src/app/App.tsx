@@ -4,6 +4,7 @@ import { setupI18n } from "@app/config/i18n";
 import { ThemeProvider } from "@entities/theme";
 
 import "./styles/global.css";
+import "./styles/colors.css";
 import "./styles/theme.css";
 import "./styles/fonts.css";
 

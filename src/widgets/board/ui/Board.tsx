@@ -1,61 +1,14 @@
 import React from "react";
-import "./Board.css";
 
-import { StreetSpace } from "@entities/street-space";
-import { SquareSpace } from "@shared/ui/square-space";
+import { Grid } from "./Grid";
 
 export interface BoardProps {}
 
 export const Board: React.FC<BoardProps> = () => {
     return (
-        <div className="board bg-board-bg">
-            <div className="bottom">
-                <SquareSpace />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-            </div>
-            <div className="left">
-                <SquareSpace />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-            </div>
-            <div className="top">
-                <SquareSpace />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-            </div>
-            <div className="right">
-                <SquareSpace />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
-                <StreetSpace cost={350} name={"CUSTOM"} color={"blue"} />
+        <div className="relative box-border aspect-square h-full bg-white p-[1vh]">
+            <div className="relative box-border h-full border-2 border-black bg-board-bg">
+                <Grid></Grid>
             </div>
         </div>
     );

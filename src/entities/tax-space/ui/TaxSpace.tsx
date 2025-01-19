@@ -1,20 +1,28 @@
-import React from "react";
+import React, { memo } from "react";
 
 import { TaxName } from "./TaxName";
 import { Space } from "@shared/ui/space";
 
-export interface TaxSpaceProps {
+export interface TaxSpaceProps extends React.HTMLAttributes<HTMLDivElement> {
     name: string;
     cost: number;
     image: string;
 }
 
-export const TaxSpace: React.FC<TaxSpaceProps> = ({ name, cost, image }) => {
+const TaxSpaceComponent: React.FC<TaxSpaceProps> = ({
+    name,
+    cost,
+    image,
+    className,
+    ...props
+}) => {
     return (
-        <Space>
-            <TaxName className="m-[19px_0_0]">{name}</TaxName>
-            <Space.Image image={image} className="absolute bottom-[32px]" />
-            <Space.Cost className="absolute bottom-4 w-full">{cost}</Space.Cost>
+        <Space className={className} {...props}>
+            <TaxName className="m-[10%_0_0]">{name}</TaxName>
+            <Space.Image image={image} className="absolute bottom-[17%] z-10" />
+            <Space.Cost>{cost}</Space.Cost>
         </Space>
     );
 };
+
+export const TaxSpace = memo(TaxSpaceComponent);

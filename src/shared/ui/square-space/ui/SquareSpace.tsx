@@ -10,7 +10,7 @@ export const SquareSpace: React.FC<SquareSpaceProps> = ({
 }) => {
     return (
         <div
-            className={`${className ? className : ""} relative h-[182px] w-[182px] border-b-4 border-l-2 border-r-4 border-t-2 border-solid border-black`}
+            className={`${className ? className : ""} relative aspect-square`}
             {...props}
         >
             {children}
